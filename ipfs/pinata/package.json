@@ -1,0 +1,21 @@
+{
+  "name": "@davidkhala/pinata",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidkhala/node-blockchain.git"
+  },
+  "dependencies": {
+    "@pinata/sdk": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}

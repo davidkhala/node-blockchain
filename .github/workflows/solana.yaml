@@ -1,0 +1,16 @@
+on: push
+jobs:
+  alchemy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: solana
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@main
+        with:
+          check-latest: true
+      - run: npm i
+      - run: npm test
+        env:
+          Alchemy_API_Key: ${{secrets.ALCHEMY_API_KEY}}
